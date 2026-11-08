@@ -2,6 +2,22 @@ import { Application } from '@webviewjs/webview'
 import { serve } from './protocol.js'
 import { join } from 'path'
 
+let url = ''
+
+if (process.env.NODE_ENV === 'development') {
+  url = 'http://localhost:5173'
+} else {
+  if (typeof Bun !== 'undefined') {
+    serve(win, 'app', join(import.meta.dirname, 'ui'))
+  }
+
+  if (typeof Deno !== 'undefined') {
+    serve(win, 'app', join(import.meta.dirname, '..', 'ui'))
+  }
+
+  url = 'app://localhost'
+}
+
 const app = new Application()
 
 const win = app.createBrowserWindow({
@@ -10,28 +26,20 @@ const win = app.createBrowserWindow({
   height: 480,
   visible: false,
 })
+
 win.center()
 
-let url = ''
-if (process.env.NODE_ENV === 'development') {
-  url = 'http://localhost:5173'
-} else {
-  if (typeof Bun !== 'undefined') {
-    serve(win, 'app', join(import.meta.dirname, 'ui'))
-  }
-  if (typeof Deno !== 'undefined') {
-    serve(win, 'app', join(import.meta.dirname, '..', 'ui'))
-  }
-  url = 'app://localhost'
-}
-
 const view = win.createWebview({ url })
+
+view.on('page-load-started', () => {
+  view.expose('native', {
+    hello: 'hello world',
+  })
+})
+
 view.on('page-load-finished', () => {
   win.show()
   win.focus()
-})
-view.expose('native', {
-  hello: 'hello world',
 })
 
 app.run()
