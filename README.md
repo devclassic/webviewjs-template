@@ -4,9 +4,14 @@ bun/deno + vite + webview
 
 ## 平台依赖
 
+### Windows
+
+[Webview2](https://developer.microsoft.com/microsoft-edge/webview2)
+
 ### Linux
 
 ```sh
+# 开发依赖
 sudo apt install -y \
   pkg-config \
   libwebkit2gtk-4.1-dev \
