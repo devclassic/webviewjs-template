@@ -11,16 +11,9 @@ bun/deno + vite + webview
 ### Linux
 
 ```sh
-# 开发依赖
+# 运行依赖
 sudo apt install -y \
-  pkg-config \
-  libwebkit2gtk-4.1-dev \
-  libsoup-3.0-dev \
-  libglib2.0-dev \
-  libcairo2-dev \
-  libpango1.0-dev \
-  libatk1.0-dev \
-  libgdk-pixbuf-2.0-dev \
-  libgtk-3-dev \
-  libxdo-dev
+  libwebkit2gtk-4.1-0 \
+  libgtk-3-0 \
+  libxdo3
 ```
