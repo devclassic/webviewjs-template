@@ -36,8 +36,8 @@ program.option('--runtime <string>', 'runtime', 'deno').action(opts => {
         'bun',
         [
           'build',
-          '--minify',
           '--compile',
+          '--minify',
           isWin ? '--windows-hide-console' : false,
           isWin ? '--windows-icon=icons/icon.ico' : false,
           '--asset=ui',
