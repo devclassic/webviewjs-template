@@ -1,0 +1,28 @@
+:root {
+  font-family:
+    'Noto Sans SC Variable', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+code,
+kbd,
+pre,
+samp,
+.mono {
+  font-family: 'Noto Sans Mono CJK SC', 'Sarasa Mono SC', 'Cascadia Mono', Consolas, monospace;
+  font-variant-ligatures: none;
+}

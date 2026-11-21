@@ -1,0 +1,275 @@
+.typeset {
+  line-height: 1.75;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.typeset > :first-child {
+  margin-top: 0;
+}
+
+.typeset > :last-child {
+  margin-bottom: 0;
+}
+
+.typeset h1,
+.typeset h2,
+.typeset h3,
+.typeset h4,
+.typeset h5,
+.typeset h6 {
+  margin: 1.4em 0 0.6em;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.typeset h1 {
+  font-size: 1.75em;
+}
+.typeset h2 {
+  font-size: 1.45em;
+}
+.typeset h3 {
+  font-size: 1.25em;
+}
+.typeset h4 {
+  font-size: 1.1em;
+}
+.typeset h5 {
+  font-size: 1em;
+}
+.typeset h6 {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.typeset p {
+  margin: 0 0 0.9em;
+}
+
+.typeset ul,
+.typeset ol {
+  margin: 0 0 0.9em;
+  padding-inline-start: 1.7em;
+  list-style-position: outside;
+}
+
+.typeset li {
+  margin-block: 0.25em;
+}
+
+.typeset li > ul,
+.typeset li > ol {
+  margin-block: 0.25em;
+}
+
+.typeset li > input[type='checkbox'] {
+  margin-inline-end: 0.4em;
+}
+
+.typeset dl {
+  margin: 0 0 0.9em;
+}
+
+.typeset dt {
+  margin-top: 0.6em;
+  font-weight: 600;
+}
+
+.typeset dd {
+  margin-inline-start: 1.7em;
+}
+
+.typeset blockquote {
+  margin: 1em 0;
+  padding-inline-start: 1em;
+  border-inline-start: 3px solid rgba(128, 128, 128, 0.45);
+  border-inline-start-color: color-mix(in srgb, currentColor 30%, transparent);
+  opacity: 0.9;
+}
+
+.typeset blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.typeset code {
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  background: rgba(128, 128, 128, 0.14);
+  background: color-mix(in srgb, currentColor 8%, transparent);
+  font-size: 0.92em;
+}
+
+.typeset pre {
+  margin: 1em 0;
+  padding: 0.8em 1em;
+  border-radius: 6px;
+  background: rgba(128, 128, 128, 0.1);
+  background: color-mix(in srgb, currentColor 6%, transparent);
+  line-height: 1.6;
+  font-size: 0.9em;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+.typeset pre code {
+  padding: 0;
+  background: none;
+  font-size: inherit;
+  white-space: inherit;
+}
+
+.typeset a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: from-font;
+}
+
+.typeset a:hover {
+  opacity: 0.75;
+}
+
+.typeset strong,
+.typeset b {
+  font-weight: 700;
+}
+
+.typeset em,
+.typeset i,
+.typeset cite {
+  font-style: italic;
+}
+
+.typeset u,
+.typeset ins {
+  text-decoration: underline;
+}
+
+.typeset s,
+.typeset del,
+.typeset strike {
+  text-decoration: line-through;
+}
+
+.typeset mark {
+  padding: 0.05em 0.15em;
+  background: #ffd54f;
+  color: #1a1a1a;
+}
+
+.typeset small {
+  font-size: 0.875em;
+}
+
+.typeset q {
+  quotes: '“' '”' '‘' '’';
+}
+
+.typeset center {
+  text-align: center;
+}
+
+.typeset address {
+  font-style: italic;
+}
+
+.typeset abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+.typeset sub,
+.typeset sup {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+.typeset sup {
+  top: -0.5em;
+}
+
+.typeset sub {
+  bottom: -0.25em;
+}
+
+.typeset hr {
+  margin: 1.5em 0;
+  border: 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.35);
+  border-top-color: color-mix(in srgb, currentColor 25%, transparent);
+}
+
+.typeset img,
+.typeset video,
+.typeset canvas,
+.typeset svg,
+.typeset iframe,
+.typeset embed,
+.typeset object {
+  max-width: 100%;
+}
+
+.typeset img,
+.typeset video {
+  height: auto;
+  vertical-align: middle;
+}
+
+.typeset figure {
+  margin: 1.2em 0;
+}
+
+.typeset figcaption {
+  margin-top: 0.5em;
+  font-size: 0.875em;
+  opacity: 0.7;
+}
+
+.typeset table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.typeset caption {
+  padding-top: 0.5em;
+  font-size: 0.875em;
+  opacity: 0.7;
+  caption-side: bottom;
+}
+
+.typeset th,
+.typeset td {
+  padding: 0.4em 0.7em;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-color: color-mix(in srgb, currentColor 30%, transparent);
+  text-align: start;
+}
+
+.typeset th {
+  font-weight: 600;
+}
+
+.typeset details {
+  margin: 1em 0;
+}
+
+.typeset summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.typeset details > :not(summary) {
+  margin-top: 0.6em;
+}
+
+.typeset [hidden] {
+  display: none !important;
+}

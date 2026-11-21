@@ -2,4 +2,4 @@
 /dist
 /ui
 /pnpm-lock.yaml
-/deno.lock
+/*.lock
