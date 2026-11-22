@@ -28,13 +28,13 @@ sudo apt install -y \
 
 #### RHEL / Rocky / Alma / CentOS Stream / Fedora
 
-Fedora 直接安装：
+#### Fedora 直接安装：
 
 ```sh
 sudo dnf install -y webkit2gtk4.1 libxdo
 ```
 
-Enterprise Linux **10** 需要先启用 EPEL（`webkit2gtk4.1` 只在 EPEL 10 里）：
+#### Enterprise Linux **10** 需要先启用 EPEL（`webkit2gtk4.1` 只在 EPEL 10 里）：
 
 ```sh
 # Rocky / Alma / CentOS Stream 10
@@ -47,7 +47,7 @@ sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-10
 sudo dnf install -y webkit2gtk4.1
 ```
 
-构建依赖：libxdo.so.3（Rocky / RHEL / Alma 10）
+#### 构建依赖：libxdo.so.3（Rocky / RHEL / Alma 10）
 
 ```sh
 # 1. 编译工具链
