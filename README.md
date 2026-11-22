@@ -21,9 +21,7 @@ bun/deno + vite + webview
 #### Debian / Ubuntu
 
 ```sh
-sudo apt install -y \
-  libwebkit2gtk-4.1-0 \
-  libxdo3
+sudo apt install -y libwebkit2gtk-4.1-0 libxdo3
 ```
 
 #### RHEL / Rocky / Alma / CentOS Stream / Fedora
